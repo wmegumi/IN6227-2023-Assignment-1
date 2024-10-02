@@ -11,7 +11,7 @@ def load_data(path):
 
     data = pd.read_csv(path, header=None, names=column_names)
     data.dropna(inplace=True)
-    # 编码分类变量
+    # Coding classification variables
     categorical_columns = ['workclass', 'education', 'marital-status', 'occupation', 'relationship', 'race', 'sex',
                            'native-country', 'salary']
 
